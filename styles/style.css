@@ -1,0 +1,337 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	/* font-size: 100%;
+	font: inherit; */
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu,img, nav, section {
+	display: block;
+}
+body {
+	/* line-height: 1; */
+    font-family: 'Open Sans', sans-serif;
+    font-size: var(--f-s-body);
+
+
+}
+ol, ul {
+	list-style: none;
+}
+:root{
+    --clr-header:hsl(193, 100%, 96%);
+    --clr-footer:hsl(192, 100%, 9%);
+    --clr-primary-txt:#000000;
+    --clr-neutral: hsl(208, 11%, 55%);
+    --clr-footer-txt:#ffffff;
+    --clr-btn-accent:hsl(322, 100%, 66%);
+    --f-s-body:18px;
+}
+
+
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+
+}
+h1,h2{
+    font-size: 2.3em;
+}
+
+
+/* ################################ class ################################ */
+.d-flex-c{
+    display: flex;
+    align-items: center ;
+}
+
+.container{
+    max-width: 1400px;
+    margin: 0 auto;
+}
+.img-s{
+    width: 100%;
+}
+.btn{
+    font-size: 1rem;
+    color: #000000;
+    font-weight: 700;
+    text-decoration: none;
+    background-color: var(--clr-footer-txt);
+    width: fit-content;
+    padding: 0.8rem 4rem;
+    border-radius: 2rem;
+    box-shadow:0rem 0.2rem 0.5rem var(--clr-neutral);
+
+}
+/* ################################ Header ################################ */
+.sect--top{
+    padding: 3rem 0 5rem;
+    background-color: var(--clr-header);
+    background-image: url(../images/bg-hero-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center top;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
+.nav--top{
+    width: 100%;
+    justify-content: space-between;
+}
+.btn-2{
+    background-color: var(--clr-btn-accent);
+    color: #ffffff;
+}
+.sect--hero{
+    width: 100%;
+    gap: 5rem    ;
+
+}
+.sect--hero-txt{
+    font-weight: 400;
+    width: 50rem;
+    display: flex;
+    
+    flex-direction: column;
+    gap: 4rem;
+}
+.sect--hero-txt p{
+    line-height: 1.8rem;
+}
+.sect--hero-img{
+}
+/* ################################ main ################################ */
+.sect--mid{
+    padding: 9rem 0 18rem;
+    display: flex;
+    flex-direction:column ;
+    gap: 4rem;
+}
+.feature--blocks{
+    /* border: 1px solid var(--clr-primary-txt); */
+    border-radius: 1rem;
+    box-shadow: 0rem 0rem 0.5rem hsl(207, 11%, 84%);
+    align-items: center;
+    gap: 24%   ;
+    padding: 3rem 3rem  3rem 9rem;
+    display: flex;
+    flex-direction: row;
+}
+.reversed{
+    flex-direction: row-reverse;
+}
+.feature--blocks-img{
+    width: 40%;
+}
+.feature--blocks-txt{
+    display: flex;
+    gap: 1.5rem ;
+    flex-direction: column;
+    color: var(--clr-neutral);
+
+}
+h3{color: var(--clr-primary-txt);
+    font-size: 1.5rem;
+}
+/* ################################ footer ################################ */
+.cto{
+    position:absolute ;
+    top: -6rem;
+    background-color: var(--clr-footer-txt);
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ gap: 1.5rem;
+ padding: 2rem 5rem;
+ border-radius: 1rem;
+ width: fit-content;
+ left: 0;
+ right: 0;
+ margin: 0 auto;
+ box-shadow: 0rem 0rem 0.5rem hsl(207, 11%, 84%);
+}
+.cto h2 {
+    font-size: 2rem;
+}
+
+
+.sect--bottom{
+    padding: 8rem 0;
+    position: relative;
+    background-color: var(--clr-footer);
+    line-height:2.5rem ;
+    display: grid;
+    /* flex-direction: column;
+    align-items: center; */
+}
+.nav--bottom{
+    /* border:1px white solid ; */
+    color: var(--clr-footer-txt);
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+    
+}
+.btn-3{
+    background-color: var(--clr-btn-accent);
+    padding: 0.7rem 7rem;
+    color: #ffffff;
+}
+.bootom-logo{
+    width: 15rem;
+    padding: 10px;
+    color: #ffffff;
+    background-color: #ffffff;
+    border-radius:10px ;
+}
+.nav--bottom-nav{
+    
+    display: flex;
+    gap: 7rem;
+    /* gap: 20%; */
+    /* grid-template-columns: repeat(4,1fr);  */
+}
+.contact{
+    max-width: 25rem;
+}
+.contact-div{
+    gap: 1rem;
+    display: flex;
+    align-items:center;
+}
+.contact-div1{
+    align-items: flex-start;
+}
+.links{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+.nav--bottom a {
+    text-decoration: none;
+    color: var(--clr-footer-txt);
+}
+.icon{
+    cursor: pointer;
+    padding: 5px;
+    width: 2rem;
+    border-radius: 50%;
+    background-color: #ffffff;
+}
+.socials{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.social--icons{
+    display: flex;
+    gap:2rem    ;
+    align-items: center;
+}
+.socials{
+    font-size: 12px;
+}
+
+@media (max-width:900px) {
+    h1,h2{
+        font-size: 1.7rem;
+    }
+    .sect--top{
+        background-image: url(../images/bg-hero-mobile.svg);
+    }
+    .container{
+        padding: 0 1rem;
+        max-width: 350px;
+        margin: 0 auto;
+    }
+    .sect--hero{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .sect--hero-txt{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .sect--hero-txt p{
+        max-width: 21rem;
+    }
+    .btn-1{
+        padding: 0.5rem 2rem;
+
+    }
+    .logo--top{
+        width: 12rem;
+    }
+    .sect--hero-txt {
+        width: auto;
+    }
+    /* ############################## */
+    .sect--mid{
+        padding: 5rem 0 10rem;
+    }
+    .feature--blocks{
+        flex-direction: column-reverse;
+        gap: 3rem;
+        padding: 2rem;
+        text-align: center;
+    }
+
+
+    .feature--blocks-img{
+        width: 90%;
+    }    
+
+    /* ############################## */
+    .cto{
+        padding: 1rem 1rem;
+    }
+    .cto h2 {
+        font-size: 1.2rem;
+    }
+    .btn-3{
+        padding: 0.2rem 3rem;
+    }
+    .nav--bottom-nav{
+        flex-direction: column;
+        gap: 0;
+    }
+    .links{
+        margin-top: 3rem;
+        display: block;
+    }
+    .socials { 
+        margin-top: 3rem;
+        text-align: center;
+
+    }
+    .social--icons{
+        justify-content: center;
+    }
+
+
+
+
+
+
+
+}
